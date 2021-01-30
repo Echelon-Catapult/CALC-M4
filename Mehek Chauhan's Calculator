@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+    float add, subtract, multiply, divide, squareRoot, exponent, a, b;
+    int operation;
+
+    printf("Please enter two numbers\n");
+    scanf("%f %f", &a, &b);
+
+    printf("What operation would you like?\n");
+    printf("add = 1, subtract = 2, multiply = 3, divide = 4, square roots = 5, exponents = 6\n");
+    scanf("%d", &operation);
+
+    if(operation == 1){
+
+        add = a + b;
+        printf("Your sum: %f + %f = %f\n", a, b, add);
+    }else if(operation == 2){
+
+        subtract = a - b;
+        printf("Your difference: %f - %f = %f\n", a, b, subtract);
+    }else if(operation == 3){
+
+        multiply = a * b;
+        printf("Your product: %f * %f = %f\n", a, b, multiply);
+    }else if(operation == 4){
+
+        divide = a / b;
+        printf("Your quotient: %f /%f = %f\n", a, b, divide);
+    }else if(operation == 5){
+
+        squareRoot = sqrt(a*a + b*b);
+        printf("Your square root is %f.\n", squareRoot);
+        printf(" If you are wondering how the square root came to that answer it finds the square root of both numbers, adds them to gether adn finds the square root of that.\n");
+    }else if(operation == 6){
+
+        exponent = pow(a,b);
+        printf("%f to the power of %f is equal to %f\n", a, b, exponent);
+    }else{
+        printf("You have entered something incorrect please restart\n");
+    }
+
+    return 0;
+}
