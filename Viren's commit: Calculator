@@ -1,0 +1,149 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    //var declaration
+    int yesOrNo;
+    int choice;
+    float diff;
+    float sum;
+    float pro;
+    float quo;
+    float numOne;
+    float numTwo;
+    float expo;
+    float sqrroot;
+    float hypo;
+    float legOne;
+    float legTwo;
+    //scaning/caculations
+    printf("Welcome to my calculator! What kind of calculation do you wish to do? For + type 1, for - type 2, for * type 3, for / type 4, for exponents type 5, for square roots type 6, and for pythagorean theorem type 7.\n");
+    scanf("%d", &choice);
+    if(choice==1){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        sum=numOne+numTwo;
+        printf("The sum is %f.\n", sum);
+    }
+    else if(choice==2){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        diff=numOne-numTwo;
+        printf("The difference is %f.\n", diff);
+    }
+    else if(choice==3){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        pro=numOne*numTwo;
+        printf("The product is %f.\n", pro);
+    }
+    else if(choice==4){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        quo=numOne/numTwo;
+        printf("The quotient is %f.\n", quo);
+    }
+    else if(choice==5){
+        printf("Now type your first number in. It can be anything. This number is the number that is being raised to the 'n' power.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything. This is the power that number one is being raised to.\n");
+        scanf("%f", &numTwo);
+        expo=pow(numOne,numTwo);
+        printf("The power is %f.\n", expo);
+    }
+    else if(choice==6){
+        printf("Now type your first number in. It can be anything. This is the number you want the square root of.\n");
+        scanf("%f", &numOne);
+        sqrroot=sqrt(numOne);
+        printf("The square root of %f is %f.\n", numOne, sqrroot);
+    }
+    else if(choice==7){
+        printf("Since you chose to find the hypotenuse of a right triangle, enter the value of the first leg.\n");
+        scanf("%f", &legOne);
+        legOne=pow(legOne,2);
+        printf("Now enter the value of the second leg.\n");
+        scanf("%f", &legTwo);
+        legTwo=pow(legTwo,2);
+        hypo=sqrt(legOne+legTwo);
+        printf("The answer is %f", hypo);
+    }
+    //Restarting
+    for (yesOrNo=1; yesOrNo==1;){
+    printf("\nDo you want to make another calculation? Yes is 1 and no is 2.\n");
+    scanf("%d", &yesOrNo);
+    if(yesOrNo==1){
+        printf("Welcome to my calculator! What kind of calculation do you wish to do? For + type 1, for - type 2, for * type 3, for / type 4, for exponents type 5, for square roots type 6, and for pythagorean theorem type 7.\n");
+    scanf("%d", &choice);
+    if(choice==1){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        sum=numOne+numTwo;
+        printf("The sum is %f.\n", sum);
+        }
+        else if(choice==2){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        diff=numOne-numTwo;
+        printf("The difference is %f.\n", diff);
+        }
+        else if(choice==3){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        pro=numOne*numTwo;
+        printf("The product is %f.\n", pro);
+        }
+        else if(choice==4){
+        printf("Now type your first number in. It can be anything.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything.\n");
+        scanf("%f", &numTwo);
+        quo=numOne/numTwo;
+        printf("The quotient is %f.\n", quo);
+        }
+        else if(choice==5){
+        printf("Now type your first number in. It can be anything. This number is the number that is being raised to the 'n' power.\n");
+        scanf("%f", &numOne);
+        printf("Now type your second number. It can also be anything. This is the power that number one is being raised to.\n");
+        scanf("%f", &numTwo);
+        expo=pow(numOne,numTwo);
+        printf("The power is %f.\n", expo);
+        }
+        else if(choice==6){
+        printf("Now type your first number in. It can be anything. This is the number you want the square root of.\n");
+        scanf("%f", &numOne);
+        sqrroot=sqrt(numOne);
+        printf("The square root of %f is %f.\n", numOne, sqrroot);
+        }
+        else if(choice==7){
+        printf("Since you chose to find the hypotenuse of a right triangle, enter the value of the first leg.\n");
+        scanf("%f", &legOne);
+        legOne=pow(legOne,2);
+        printf("Now enter the value of the second leg.\n");
+        scanf("%f", &legTwo);
+        legTwo=pow(legTwo,2);
+        hypo=sqrt(legOne+legTwo);
+        printf("The answer is %f.\n", hypo);
+        }
+    }
+    else if(yesOrNo==2){
+        printf("Hope this was helpful!\n");
+    }
+    };
+
+    return 0;
+}
